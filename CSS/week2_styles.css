@@ -1,0 +1,152 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #dddddd; /* Light gray background */
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #10b981; /* Emerald green */
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #10b981; /* Emerald green */
+    margin-bottom: 10px;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+nav a {
+    color: #3b82f6; /* Blue */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    background-color: #dbeafe; /* Light blue */
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #bfdbfe;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #1e3a8a; /* Dark blue */
+}
+
+strong {
+    color: #d97706; /* Amber */
+}
+
+em {
+    color: #8b5cf6; /* Violet */
+}
+
+section {
+    padding: 10px;
+    background-color: #fef3c7; /* Light amber */
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #d97706; /* Amber border */
+}
+
+img {
+    border: 2px solid #1e3a8a; /* Dark blue */
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1em;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .gif-container {
+        display: block;
+        margin: 20px auto; /* Centers the GIF with margin */
+        max-width: 100%;   /* Responsive width */
+    }
+
+    .gif-image {
+        width: 300px;      /* Fixed width */
+        height: auto;      /* Maintains aspect ratio */
+        border: 2px solid #000; /* Adds border */
+        border-radius: 10px;    /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+    }
+
+    /* Hover effect */
+    .gif-image:hover {
+        transform: scale(1.1); /* Slight zoom on hover */
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+
+    /* Animation class (optional) */
+    .animated-gif {
+        animation: pulse 2s infinite; /* Pulsing effect */
+    }
+
+    /* Keyframes for pulse animation */
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+}
